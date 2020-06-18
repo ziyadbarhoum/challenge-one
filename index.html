@@ -4,17 +4,34 @@
 <script type="text/javascript" src="app.js"></script>
 
 <table>
-<caption> this is a simple 3x3 table</caption>
 
 <tr id="row1">
-    <td>cell 1  <td>cell 2  <td>cell 3
-<tr id="row1">        
-    <td>cell 4  <td>cell 5  <td>cell 6
-<tr id="row1">        
-    <td>cell 7  <td>cell 8  <td>cell 9    
+    <td><button id= "1"  onclick="myFunction()" class="select">cell 3</button></td> 
+    
+    <td><button id= "2" onclick="myFunction()" class="select">cell 3</button></td>  
+    
+    <td><button id= "3" onclick="myFunction()" class="select">cell 3</button></td>
+<tr id="row2">        
+    <td><button id= "4" onclick="myFunction()" class="select">cell 3</button></td>
+    
+    <td><button id= "5" onclick="myFunction()" class="select">cell 3</button></td>  
+    
+    <td><button id= "6" onclick="myFunction()" class="select">cell 6</button></td>
+<tr id="row3">        
+    <td><button id= "7" onclick="myFunction()" class="select">cell 3</button></td> 
+    
+    <td><button id= "8" onclick="myFunction()" class="select">cell 3</button></td>  
+    
+    <td><button id= "9" onclick="myFunction()" class="select">cell 9</button></td>   
     
 
 
 </table>
-
+<script>
+    function myFunction() {
+        console.log( document.getElementsByClassName('select'))
+    document.getElementsByClassName('select')[i].innerHTML = "";
+    };
+    
+</script>
 </body>
